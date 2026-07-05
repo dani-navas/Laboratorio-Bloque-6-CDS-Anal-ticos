@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access Control  Customer Aspect'
+@MappingRole: true
+define role ZAC_CUSTOM_ASPECT_DNAVAS {
+    grant select on zcds_auditing_aspect_dnavas
+                    where (CreatedBy,CustomerName) = aspect ZAC_AUDITING_ASPECT_DNAVAS and
+                    InvAmount > 100;                        
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access Control Airport 2'
+@MappingRole: true
+define role ZAC_ZCDS_AIRPORT_2_DNAVAS {
+    grant select on ZCDS_AIRPORT_1_DNAVAS where Country = 'US' OR Country = 'DE';
+    grant select ON ZCDS_AIRPORT_2_DNAVAS where Country = 'US' OR Country = 'DE';                  
+}

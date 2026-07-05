@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access Control Airport 4'
+@MappingRole: true
+define role ZAC_ZCDS_AIRPORT_4_DNAVAS {
+    grant  select on ZCDS_AIRPORT_4_DNAVAS
+                    where (FlightType) = aspect pfcg_auth(ZAOFLYTYDN, AFFLYTYDNA,  ACTVT = '03' );                        
+}

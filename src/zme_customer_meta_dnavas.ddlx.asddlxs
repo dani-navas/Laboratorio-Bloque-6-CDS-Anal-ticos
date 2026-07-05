@@ -1,0 +1,18 @@
+@Metadata.layer: #CORE
+annotate entity zcds_customer_meta_DNAVAS with
+  parameters
+    @EndUserText.label: 'City'
+    pCity
+{
+  @UI.dataFieldDefault: [{ importance: #MEDIUM }]
+  @UI.lineItem: [{ position:  10,
+                   type: #FOR_ACTION,
+                   dataAction: 'get_customer'  }]
+  CustomerId;
+  @UI.dataFieldDefault: [{ importance: #MEDIUM }]
+  @UI.lineItem: [{ position: 20,
+                   type: #FOR_ACTION,
+                   dataAction: 'get_customer'  }]
+  City;
+
+}

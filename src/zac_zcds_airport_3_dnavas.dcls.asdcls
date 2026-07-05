@@ -1,0 +1,7 @@
+@EndUserText.label: 'Access Control Airport 3'
+@MappingRole: true
+define role ZAC_ZCDS_AIRPORT_3_DNAVAS {
+    grant select on ZCDS_AIRPORT_3_DNAVAS  
+                    where inherit  ZAC_ZCDS_AIRPORT_2_DNAVAS  
+                      for grant select on ZCDS_AIRPORT_2_DNAVAS and  AirportId = 'MUC';                         
+}

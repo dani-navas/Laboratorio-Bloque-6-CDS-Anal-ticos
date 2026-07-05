@@ -1,0 +1,6 @@
+@EndUserText.label: 'Access Control  User Aspect'
+@MappingRole: true
+define role ZAC_ZCDS_COM_INV_2_DNAVAS {
+    grant select on zcds_com_inv_2_dnavas
+                    where CreatedBy  = aspect user;                    
+}
